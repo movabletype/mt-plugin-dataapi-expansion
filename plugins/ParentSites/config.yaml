@@ -1,0 +1,13 @@
+name: ParenSites
+id: ParentSites
+version: 1.0
+author: Six Apart, LTD.
+desciption: This Data API features will provide in future release of Movable Type. This plugin provides parent website id and name for Blog resource.
+
+applications:
+  data_api:
+    resources:
+      blog:
+        fields:
+          - name: website
+            from_object: ParentSites::Resource::Blog::website
